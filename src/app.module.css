@@ -1,0 +1,162 @@
+/* styles.module.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark-mode body {
+  background-color: #333;
+  color: #fff;
+}
+
+.walletContainer {
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.walletContainer:hover {
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+}
+
+.walletCard {
+  background-color: #f1f1f1;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.walletCard:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.inputField {
+  width: calc(100% - 40px);
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+}
+
+.inputField:focus {
+  border-color: #4caf50;
+}
+
+.submitButton,
+.toggleButton,
+.btn {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submitButton:hover,
+.toggleButton:hover,
+.btn:hover {
+  background-color: #45a049;
+}
+
+.filterButtons {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.transactionHistory {
+  margin-top: 50px;
+}
+
+.transactionsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  /* justify-content: flex-start; */
+}
+
+.transactionItem {
+  padding: 20px;
+  max-width: 300px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+  background-color: #ffffff;
+}
+
+.transactionItem:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.credit {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.debit {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+@media (max-width: 768px) {
+  .inputField,
+  .submitButton,
+  .toggleButton,
+  .btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .transactionItem {
+    width: calc(50% - 20px);
+  }
+}
+
+/* styles.module.css */
+/* ... previous styles ... */
+
+/* Dark Mode Styles */
+.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark-mode .walletCard {
+  background-color: #444;
+}
+
+.dark-mode .inputField {
+  background-color: #555;
+  color: #fff;
+}
+
+/* Light Mode Styles */
+.light-mode {
+  background-color: #fff;
+  color: #333;
+}
+
+.light-mode .walletCard {
+  background-color: #f9f9f9;
+}
+
+.light-mode .inputField {
+  background-color: #ccc;
+}
